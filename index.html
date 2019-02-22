@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator Online</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <form name="Calc">
+                <table>
+                    
+                    <tr>
+                        <td colspan="5"><input type="text" name="Input"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn mid" name="one" value="1" OnClick="Calc.Input.value += '1'"></td>
+                        <td><input type="button" class="btn mid" name="two" value="2" OnCLick="Calc.Input.value += '2'"></td>
+                        <td><input type="button" class="btn mid" name="three" value="3" OnClick="Calc.Input.value += '3'"></td>
+                        <td><input type="button" class="btn opr" name="plus" value="+" OnClick="Calc.Input.value += '+'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn mid" name="four" value="4" OnClick="Calc.Input.value += '4'"></td>
+                        <td><input type="button" class="btn mid" name="five" value="5" OnCLick="Calc.Input.value += '5'"></td>
+                        <td><input type="button" class="btn mid" name="six" value="6" OnClick="Calc.Input.value += '6'"></td>
+                        <td><input type="button" class="btn opr" name="minus" value="-" OnClick="Calc.Input.value += '-'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn mid" name="seven" value="7" OnClick="Calc.Input.value += '7'"></td>
+                        <td><input type="button" class="btn mid" name="eight" value="8" OnCLick="Calc.Input.value += '8'"></td>
+                        <td><input type="button" class="btn mid" name="nine" value="9" OnClick="Calc.Input.value += '9'"></td>
+                        <td><input type="button" class="btn opr" name="times" value="x" OnClick="Calc.Input.value += '*'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn bottom" name="clear" value="C" OnClick="Calc.Input.value = ''"></td>
+                        <td><input type="button" class="btn bottom" name="zero" value="0" OnClick="Calc.Input.value += '0'"></td>
+                        <td><input type="button" class="btn bottom" name="div" value="/" OnClick="Calc.Input.value += '/'"></td>
+                        <td><input type="button" class="btn opr2" name="DoIt" value="=" OnClick="Calc.Input.value = eval(Calc.Input.value)"></td>
+                    </tr>
+            
+                </table>
+            </form>
+        </div>
+        
+    </body>
+</html>
